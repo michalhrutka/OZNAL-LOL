@@ -1,7 +1,7 @@
 import pandas as pd
 
 # read data
-participants_data = pd.read_csv('./../data/participants.csv')
+participants_data = pd.read_csv('./../data/participants2.csv')
 stats_data = pd.read_csv('./../data/stats_merged.csv')
 champions_data = pd.read_csv('./../data/champs.csv')
 matches_data = pd.read_csv('./../data/matches.csv')
@@ -10,6 +10,7 @@ matches_data = pd.read_csv('./../data/matches.csv')
 # stats_data.drop(['trinket', 'killingsprees', 'largestcrit', 'totheal', 'totunitshealed', 'dmgselfmit', 'dmgtoobj',
 #                  'dmgtoturrets', 'visionscore', 'goldspent', 'pinksbought', 'wardsbought', 'wardsplaced',
 #                  'wardskilled'], axis=1, inplace=True)
+
 
 # Print column names
 print(participants_data.columns)
@@ -45,6 +46,6 @@ for col in dataset.columns:
 
 # One hot encoding of several columns
 one_hot_encoded_champs = pd.get_dummies(dataset['name'], prefix='', prefix_sep='')
-one_hot_encoded_roles = pd.get_dummies(dataset['role'], prefix='', prefix_sep='')
+#one_hot_encoded_roles = pd.get_dummies(dataset['role'], prefix='', prefix_sep='')
 one_hot_encoded_positions = pd.get_dummies(dataset['position'], prefix='', prefix_sep='')
 one_hot_encoded_items = pd.get_dummies(dataset['item1'], prefix='', prefix_sep='')
