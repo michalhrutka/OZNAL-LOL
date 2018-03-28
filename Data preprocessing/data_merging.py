@@ -19,6 +19,19 @@ print(champions_data.columns)
 # Print first 5 data samples
 print(participants_data.head(5).to_string())
 
+#divide games by time
+early_game = []
+mid_game = []
+late_game = []
+print(matches_data.columns)
+for i,record in matches_data.iterrows():
+    if int(record['duration']) > 1000 and int(record['duration']) < 1200:
+        early_game.append(record)
+    elif int(record['duration']) >= 1200 and int(record['duration']) < 2400:
+        mid_game.append(record)
+    else:
+        late_game.append(record)
+
 # Add champion names into participants data
 participants_data = pd.merge(left=participants_data, right=champions_data, how='left', left_on='championid',
                              right_on='id',  suffixes=('', '_y'))
