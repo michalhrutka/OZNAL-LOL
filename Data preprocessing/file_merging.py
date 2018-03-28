@@ -35,7 +35,7 @@ print("Upravene")
 
 #import json champions
 import json
-with open('D:\workspaceDemo]\data\champions.json') as json_data:
+with open('./../data/champions.json') as json_data:
     d = json.load(json_data)
 
 #create tamp hashmap
@@ -60,7 +60,7 @@ for index,row in champions_data.iterrows():
 champions_data.to_csv('./../data/champions.csv')
 
 import json
-with open('D:\workspaceDemo]\data\item.json') as json_data:
+with open('./../data/item.json') as json_data:
     d = json.load(json_data)
 data = d.get("data")
     
@@ -87,7 +87,7 @@ for k,v in item_types.items():
     data_items.append(temp_list)
 
 import csv
-with open('D:\workspaceDemo]\data\\typeitems.csv', 'w', newline='') as myfile:
+with open('./../data/typeitems.csv', 'w', newline='') as myfile:
     wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
     for row in data_items:
         wr.writerow(row)
