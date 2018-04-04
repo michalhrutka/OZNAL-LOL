@@ -68,6 +68,7 @@ dataset['version'][dataset['version'].str.startswith('7', na=False)] = 7
 dataset['version'][dataset['version'].str.startswith('6', na=False)] = 6
 dataset['version'][dataset['version'].str.startswith('5', na=False)] = 5
 dataset['version'][dataset['version'].str.startswith('4', na=False)] = 4
+print(dataset['version'].value_counts())
 
 dataset['player'][dataset['player'] <= 5] = 0
 dataset['player'][dataset['player'] > 5] = 1
