@@ -22,9 +22,10 @@
     * DONE zistit pocet verzii a pocet hier k nim :M
     * DONE transformovat column player na binarny - team :M
     * DONE kategorizacia Itemov :L
+    * DONE Vyhodit null lines z `typeitems.csv` :M
+    * DONE Korelacie vybranych atributov :M
 * Statistika, ktore kombinacie sampionov castejsie vyhravaju :L
-* Korelacie vybranych atributov :M
-* Vyhodit null lines z `typeitems.csv` :M
 * Spisat, ktore modely pouzijeme na predikciu, evaluacne metriky, vysledky prvotnych experimentov :M
 * Najst cca 3 clanky inych autorov o ML :Komu vyjde cas
 * Zistit pocet unikatnych kategorii itemov :L
+* Dokoncit Spravu 2
