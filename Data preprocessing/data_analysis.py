@@ -9,7 +9,7 @@ print(dataset.columns)
 
 
 df_corr = dataset._get_numeric_data()
-df_corr = df_corr.drop(['id', 'Unnamed: 0', 'totunitshealed', 'visionscore', 'dmgselfmit', 'totheal', 'enemyjunglekills', 'pinksbought', 'totcctimedealt', 'totdmgdealt', 'truedmgdealt', 'pentakills', 'firstblood', 'quadrakills', 'triplekills', 'legendarykills', 'item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'trinket', 'timecc'], axis=1)
+df_corr = df_corr.drop(['id', 'Unnamed: 0', 'totunitshealed', 'longesttimespentliving', 'visionscore', 'dmgselfmit', 'totheal', 'enemyjunglekills', 'pinksbought', 'totcctimedealt', 'totdmgdealt', 'truedmgdealt', 'pentakills', 'firstblood', 'quadrakills', 'triplekills', 'legendarykills', 'item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'trinket', 'timecc'], axis=1)
 
 mask = np.zeros_like(df_corr.corr(), dtype=np.bool)
 mask[np.triu_indices_from(mask)] = True

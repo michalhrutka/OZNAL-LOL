@@ -29,3 +29,6 @@
 * Najst cca 3 clanky inych autorov o ML :Komu vyjde cas
 * Zistit pocet unikatnych kategorii itemov :L
 * Dokoncit Spravu 2
+    * Rozpisat detaily ako funguju ML modely :M
+    * Related work :L
+    * Feedback na Predspracovanie ked to Lukas dokonci :M
