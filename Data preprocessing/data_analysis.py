@@ -16,6 +16,9 @@ mask[np.triu_indices_from(mask)] = True
 cmap = sns.diverging_palette(10, 150, as_cmap=True)
 
 plt.figure(figsize=(90, 60))
-sns.heatmap(df_corr.corr(), cmap=cmap, annot=True, fmt = '.2f', mask = mask, square=True, linewidths=.5, center = 0)
-plt.title('Correlations - win vs factors (all games)')
-plt.show()
+correlations = df_corr.corr()
+# sns.heatmap(correlations, cmap=cmap, annot=True, fmt = '.2f', mask = mask, square=True, linewidths=.5, center = 0)
+# plt.title('Correlations - win vs factors (all games)')
+# plt.show()
+print(correlations[correlations >= 0.5].to_string())
+

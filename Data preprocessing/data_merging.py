@@ -20,12 +20,12 @@ print(champions_data.columns)
 # Print first 5 data samples
 print(participants_data.head(5).to_string())
 
-#divide games by time
+# divide games by time
 early_game = []
 mid_game = []
 late_game = []
 print(matches_data.columns)
-for i,record in matches_data.iterrows():
+for i, record in matches_data.iterrows():
     if int(record['duration']) > 1000 and int(record['duration']) < 1200:
         early_game.append(record)
     elif int(record['duration']) >= 1200 and int(record['duration']) < 2400:
@@ -70,8 +70,9 @@ dataset['version'][dataset['version'].str.startswith('5', na=False)] = 5
 dataset['version'][dataset['version'].str.startswith('4', na=False)] = 4
 print(dataset['version'].value_counts())
 
-dataset['player'][dataset['player'] <= 5] = 0
-dataset['player'][dataset['player'] > 5] = 1
-print(dataset['player'].value_counts())
+dataset['team'] = dataset['player'].apply(lambda x: 0 if x <= 5 else 1)
 
-dataset.to_csv('./../data/dataset.csv')
+print(dataset['team'].value_counts())
+print(dataset.columns)
+dataset.drop(['Unnamed: 0'], axis=1, inplace=True)
+dataset.to_csv('./../data/dataset.csv', index=False)
