@@ -29,7 +29,7 @@
     * DONE Statistika, ktore kombinacie sampionov castejsie vyhravaju :L
     * DONE Spisat, ktore modely pouzijeme na predikciu, evaluacne metriky, vysledky prvotnych experimentov :M
     * DONE Najst cca 3 clanky inych autorov o ML :Komu vyjde cas
-    * DONEZ istit pocet unikatnych kategorii itemov :L
+    * DONE Zistit pocet unikatnych kategorii itemov :L
     * DONE Dokoncit Spravu 2
     * DONE Rozpisat detaily ako funguju ML modely :M
     * DONE Related work :L
