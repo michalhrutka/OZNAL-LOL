@@ -6,7 +6,9 @@
 
 ### Step 2
 * Run `file_merging.py` script
+* Run 'data_matches.py' script
 * Make sure `data/stats_merged.csv` was created
+* Make sure `data/matchagains.csv` and `data/matchwinagains.csv` was created
 
 ### Step 3
 * Now you are all set to create new scripts or continue working on `data_merging.py`
@@ -24,11 +26,16 @@
     * DONE kategorizacia Itemov :L
     * DONE Vyhodit null lines z `typeitems.csv` :M
     * DONE Korelacie vybranych atributov :M
-* Statistika, ktore kombinacie sampionov castejsie vyhravaju :L
-* Spisat, ktore modely pouzijeme na predikciu, evaluacne metriky, vysledky prvotnych experimentov :M
-* Najst cca 3 clanky inych autorov o ML :Komu vyjde cas
-* Zistit pocet unikatnych kategorii itemov :L
-* Dokoncit Spravu 2
-    * Rozpisat detaily ako funguju ML modely :M
-    * Related work :L
-    * Feedback na Predspracovanie ked to Lukas dokonci :M
+    * DONE Statistika, ktore kombinacie sampionov castejsie vyhravaju :L
+    * DONE Spisat, ktore modely pouzijeme na predikciu, evaluacne metriky, vysledky prvotnych experimentov :M
+    * DONE Najst cca 3 clanky inych autorov o ML :Komu vyjde cas
+    * DONEZ istit pocet unikatnych kategorii itemov :L
+    * DONE Dokoncit Spravu 2
+    * DONE Rozpisat detaily ako funguju ML modely :M
+    * DONE Related work :L
+    * DONE Feedback na Predspracovanie ked to Lukas dokonci :M
+    * DONE Pridanie atributov vyhody na lajne :LM
+    * DONE Pridanie atributu vhodnosti kompoyicie :M
+    * DONE Dokoncit Spravu 3 :L
+    * DONE Napisat rozdelenie prace :M
+    * DONE Prichystat example dat :L
